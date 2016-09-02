@@ -41,6 +41,10 @@ public class OneFragment extends Fragment {
         return rootView;
     }
 
+
+    /**
+     * 获取控件
+     */
     private void initView() {
          tv_content= (TextView) rootView.findViewById(R.id.tv_content);
         tv_content.setText("你好， 我github");
