@@ -10,13 +10,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.SpannableString;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.scott.as.view.AnimateButton;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * 主界面
+ */
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private FragmentManager mFragmentManager;
     private FragmentTransaction mTransaction;
@@ -120,8 +124,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
+    @Override
+    public void onClick(View view) {
+        Log.i("smarhit","view onclick");
+    }
 }
