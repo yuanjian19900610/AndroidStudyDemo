@@ -42,12 +42,14 @@ public class OneFragment extends Fragment {
         tv_content.setText("解决冲突");
         return rootView;
     }
-    
-    private void initView(){
-        
+ 
+
+    private void initView() {
+        Log.i("smarhit","初始化界面");
     }
+
     private void submit(){
-        Log.i("smarhit","有问题了哦");
+        Log.i("smarhit","web提交的内容");
     }
 
 
