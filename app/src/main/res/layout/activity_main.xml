@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="广西龙汇集团成都研发中心欢迎你,谢谢您对我们的支持。" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:text="去购物"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="100px"
+        android:layout_height="60px"
+        android:textSize="30px"
+        android:text="去购物"/>
+
+    <TextView
+        android:id="@+id/tv_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.scott.as.view.AnimateButton
+        android:id="@+id/ab_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="AnimateButton"/>
+
+    <TextView
+        android:id="@+id/tv_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你好，袁见"/>
+
+    <com.scott.as.view.CircleProgressView
+        android:layout_width="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>
