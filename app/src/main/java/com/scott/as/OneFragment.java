@@ -36,14 +36,18 @@ public class OneFragment extends Fragment {
             rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
         tv_content= (TextView) rootView.findViewById(R.id.tv_content);
-        tv_content.setText("解决冲突");
         tv_content.setText("你好， 我是雄哥好帮手");
-        Log.i("smarhit","web提交的内容")
+        //什么也不想说了， 都是你的问题
+        initView();
+        tv_content.setText("解决冲突");
         return rootView;
     }
     
+    private void initView(){
+        
+    }
     private void submit(){
-        Log.i("smarhit","web提交的内容")
+        Log.i("smarhit","有问题了哦");
     }
 
 
