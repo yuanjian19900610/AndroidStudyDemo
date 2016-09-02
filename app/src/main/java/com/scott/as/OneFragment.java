@@ -33,21 +33,17 @@ public class OneFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_one, container, false);
+        if(rootView==null){
+            rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
+      
         initView();
         return rootView;
     }
 
-
-    /**
-     * 获取控件
-     */
     private void initView() {
-        tv_content = (TextView) rootView.findViewById(R.id.tv_content);
-        //设置内容
-        tv_content.setText("你好， 我是雄哥好帮手");
+         tv_content= (TextView) rootView.findViewById(R.id.tv_content);
+        tv_content.setText("你好， 我github");
     }
 
     private void submit() {
