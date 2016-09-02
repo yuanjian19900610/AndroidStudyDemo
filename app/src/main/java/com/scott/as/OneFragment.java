@@ -14,10 +14,11 @@ import android.widget.TextView;
  * Function:
  * Created by yuanjian on 16/5/24.
  */
-public class OneFragment extends Fragment {
+public class OneFragment extends Fragment implements View.OnClickListeners{
 
     private View rootView;
     private TextView tv_content;
+    private Button btn_submit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,6 @@ public class OneFragment extends Fragment {
         if(rootView==null){
             rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
-      
         initView();
         return rootView;
     }
@@ -47,12 +47,11 @@ public class OneFragment extends Fragment {
      */
     private void initView() {
          tv_content= (TextView) rootView.findViewById(R.id.tv_content);
+         btn_submit=rootView.findViewById(R.id.btn_submit);
         tv_content.setText("你好， 我github");
+        btn_submit.setOnClickListener(this)
     }
 
-    private void submit() {
-        Log.i("smarhit", "web提交的内容");
-    }
-
+    
 
 }
