@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * Function:
@@ -16,7 +17,7 @@ import android.view.ViewGroup;
 public class OneFragment extends Fragment {
 
     private View rootView;
-
+    private TextView tv_content;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,8 @@ public class OneFragment extends Fragment {
         if(rootView==null){
             rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
-
+        tv_content= (TextView) rootView.findViewById(R.id.tv_content);
+        tv_content.setText("你好， 我是雄哥好帮手");
         Log.i("smarhit","test  test test");
         return rootView;
 
