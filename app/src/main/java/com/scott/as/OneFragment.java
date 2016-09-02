@@ -48,7 +48,7 @@ public class OneFragment extends Fragment implements View.OnClickListener{
     private void initView() {
         tv_content = (TextView) rootView.findViewById(R.id.tv_content);
         btn_submit = (Button) rootView.findViewById(R.id.btn_submit);
-        tv_content.setText("你好， 错喔哦 你懂的");
+        tv_content.setText("你好，ok");
         btn_submit.setOnClickListener(this);
 
     }
