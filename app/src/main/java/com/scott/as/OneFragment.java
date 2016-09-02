@@ -14,7 +14,7 @@ import android.widget.TextView;
  * Function:
  * Created by yuanjian on 16/5/24.
  */
-public class OneFragment extends Fragment implements View.OnClickListener {
+public class OneFragment extends Fragment implements View.OnClickListener{
 
     private View rootView;
     private TextView tv_content;
@@ -34,8 +34,8 @@ public class OneFragment extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if (rootView == null) {
-            rootView = inflater.inflate(R.layout.fragment_one, container, false);
+        if(rootView==null){
+            rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
         initView();
         return rootView;
