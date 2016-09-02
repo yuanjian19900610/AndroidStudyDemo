@@ -35,7 +35,7 @@ public class OneFragment extends Fragment {
             rootView=inflater.inflate(R.layout.fragment_one,container,false);
         }
 
-        Log.i("smarhit","test");
+        Log.i("smarhit","test  test test");
         return rootView;
 
     }
