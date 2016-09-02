@@ -4,20 +4,21 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
  * Function:
  * Created by yuanjian on 16/5/24.
  */
-public class OneFragment extends Fragment {
+public class OneFragment extends Fragment implements View.OnClickListener {
 
     private View rootView;
     private TextView tv_content;
+    private Button btn_submit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,10 +34,9 @@ public class OneFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        if(rootView==null){
-            rootView=inflater.inflate(R.layout.fragment_one,container,false);
+        if (rootView == null) {
+            rootView = inflater.inflate(R.layout.fragment_one, container, false);
         }
-      
         initView();
         return rootView;
     }
@@ -46,13 +46,19 @@ public class OneFragment extends Fragment {
      * 获取控件
      */
     private void initView() {
-         tv_content= (TextView) rootView.findViewById(R.id.tv_content);
+        tv_content = (TextView) rootView.findViewById(R.id.tv_content);
+        btn_submit = (Button) rootView.findViewById(R.id.btn_submit);
         tv_content.setText("你好， 我github");
+        btn_submit.setOnClickListener(this);
+
     }
 
-    private void submit() {
-        Log.i("smarhit", "web提交的内容");
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_submit:
+
+                break;
+        }
     }
-
-
 }

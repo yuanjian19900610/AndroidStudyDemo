@@ -12,4 +12,10 @@
         android:text="创建分支"
         android:textSize="40sp" />
 
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
 </LinearLayout>
